@@ -13,6 +13,7 @@ import { APP_ROUTES } from './app.routes';
 import { CarritoService } from './services/carrito.service';
 import { UserRegisterComponent } from './components/user-register/user-register.component';
 import { ProfileComponent } from './components/profile/profile.component';
+import { NgxPayPalModule } from 'ngx-paypal';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { ProfileComponent } from './components/profile/profile.component';
   imports: [
     BrowserModule,
     HttpClientModule,
-    APP_ROUTES
+    APP_ROUTES,
+    NgxPayPalModule
   ],
   providers: [
     ProductService,
