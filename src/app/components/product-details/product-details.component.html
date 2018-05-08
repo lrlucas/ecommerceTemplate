@@ -3,9 +3,8 @@
   <div class="container dark-grey-text mt-5">
 
 
-
     <!--Grid row-->
-    <div class="row wow fadeIn">
+    <div class="row animated fadeIn">
 
       <!--Grid column-->
       <div class="col-md-6 mb-4">
@@ -35,31 +34,23 @@
 
           <p class="lead">
               <span class="mr-1">
-                <del>${{product.price}}</del>
+                <del>${{ product.price }}</del>
               </span>
-            <span>${{product.price}}</span>
+            <span>${{ product.price }}</span>
           </p>
 
           <p class="lead font-weight-bold">Description</p>
 
           <p>{{ product.name }}</p>
 
-          <button (click)="_carritoService.addToCart(product)" class="btn btn-primary btn-md my-0 p" style="margin-left: 0;">
+          <button (click)="_carritoService.addToCart(product)" class="btn btn-primary btn-md my-0 p"
+                  style="margin-left: 0;">
             Add to cart
             <i class="fa fa-shopping-cart ml-1"></i>
           </button>
 
           <ngx-paypal [config]="payPalConfig"></ngx-paypal>
 
-
-          <!--<form class="d-flex justify-content-left">-->
-            <!--&lt;!&ndash; Default input &ndash;&gt;-->
-            <!--&lt;!&ndash;<input type="number" value="1" aria-label="Search" class="form-control" style="width: 100px">&ndash;&gt;-->
-            <!--<button class="btn btn-primary btn-md my-0 p" type="submit">Add to cart-->
-              <!--<i class="fa fa-shopping-cart ml-1"></i>-->
-            <!--</button>-->
-
-          <!--</form>-->
 
         </div>
         <!--Content-->
@@ -69,9 +60,6 @@
 
     </div>
     <!--Grid row-->
-
-
-
 
 
     <hr>
@@ -84,7 +72,8 @@
 
         <h4 class="my-4 h4">Additional information</h4>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus suscipit modi sapiente illo soluta odit voluptates,
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus suscipit modi sapiente illo soluta odit
+          voluptates,
           quibusdam officia. Neque quibusdam quas a quis porro? Molestias illo neque eum in laborum.</p>
 
       </div>

@@ -14,6 +14,7 @@ import { CarritoService } from './services/carrito.service';
 import { UserRegisterComponent } from './components/user-register/user-register.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { NgxPayPalModule } from 'ngx-paypal';
+import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { NgxPayPalModule } from 'ngx-paypal';
     SlidesComponent,
     ProductDetailsComponent,
     UserRegisterComponent,
-    ProfileComponent
+    ProfileComponent,
+    ShoppingCartComponent
   ],
   imports: [
     BrowserModule,

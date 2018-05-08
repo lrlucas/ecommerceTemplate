@@ -40,9 +40,6 @@ export class ProductDetailsComponent implements OnInit {
 
 
 
-
-//
-
   private initConfig(): void {
     this.payPalConfig = new PayPalConfig(PayPalIntegrationType.ClientSideREST, PayPalEnvironment.Sandbox, {
       commit: true,
@@ -69,8 +66,5 @@ export class ProductDetailsComponent implements OnInit {
       }]
     });
   }
-
-
-//
 
 }

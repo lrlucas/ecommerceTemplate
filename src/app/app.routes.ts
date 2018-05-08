@@ -4,6 +4,7 @@ import { HomeProductComponent } from './components/home-product/home-product.com
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { UserRegisterComponent } from './components/user-register/user-register.component';
 import { ProfileComponent } from './components/profile/profile.component';
+import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
 
 
 
@@ -13,6 +14,7 @@ const appRoutes: Routes = [
   { path: 'product/:id', component: ProductDetailsComponent },
   { path: 'register', component: UserRegisterComponent },
   { path: 'profile', component: ProfileComponent },
+  { path: 'cart', component: ShoppingCartComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
 
 ];
