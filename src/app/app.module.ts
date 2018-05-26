@@ -17,6 +17,7 @@ import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
+import {APP_BASE_HREF} from '@angular/common';
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import { ToastrModule } from 'ngx-toastr';
   ],
   providers: [
     ProductService,
-    CarritoService
+    CarritoService,
+    { provide: APP_BASE_HREF, useValue: 'EcommerceTemplate' }
   ],
   bootstrap: [AppComponent]
 })
