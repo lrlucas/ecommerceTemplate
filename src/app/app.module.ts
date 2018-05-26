@@ -13,8 +13,10 @@ import { APP_ROUTES } from './app.routes';
 import { CarritoService } from './services/carrito.service';
 import { UserRegisterComponent } from './components/user-register/user-register.component';
 import { ProfileComponent } from './components/profile/profile.component';
-import { NgxPayPalModule } from 'ngx-paypal';
 import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
+import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
 
 
 @NgModule({
@@ -32,7 +34,11 @@ import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.
     BrowserModule,
     HttpClientModule,
     APP_ROUTES,
-    NgxPayPalModule
+    FormsModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot({
+      positionClass: 'toast-top-center',
+    })
   ],
   providers: [
     ProductService,

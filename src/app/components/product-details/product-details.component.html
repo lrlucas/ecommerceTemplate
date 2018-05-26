@@ -43,13 +43,15 @@
 
           <p>{{ product.name }}</p>
 
-          <button (click)="_carritoService.addToCart(product)" class="btn btn-primary btn-md my-0 p"
+          <button (click)="addToCart(product)" class="btn btn-primary btn-md my-0 p"
                   style="margin-left: 0;">
             Add to cart
             <i class="fa fa-shopping-cart ml-1"></i>
           </button>
 
-          <ngx-paypal [config]="payPalConfig"></ngx-paypal>
+          <!--<div id="paypal-checkout-btn">-->
+          <!--</div>-->
+
 
 
         </div>
