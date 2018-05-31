@@ -15,7 +15,7 @@ const appRoutes: Routes = [
   { path: 'register', component: UserRegisterComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'cart', component: ShoppingCartComponent },
-  { path: '', redirectTo: '', pathMatch: 'full' },
+  { path: '**', redirectTo: '', pathMatch: 'full' },
 
 ];
 
