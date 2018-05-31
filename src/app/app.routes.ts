@@ -10,12 +10,12 @@ import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.
 
 const appRoutes: Routes = [
 
-  { path: 'home', component: HomeProductComponent },
+  { path: '', component: HomeProductComponent },
   { path: 'product/:id', component: ProductDetailsComponent },
   { path: 'register', component: UserRegisterComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'cart', component: ShoppingCartComponent },
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', redirectTo: '', pathMatch: 'full' },
 
 ];
 

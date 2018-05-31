@@ -67,7 +67,8 @@ export class CarritoService {
     for (let i of this.items) {
 
       if (id === i.id) {
-        this.items.splice(i, 1 );
+        let posicion_array = this.items.indexOf(i);
+        this.items.splice(posicion_array, 1 );
         this.guardar_storage();
         this.actualizar_total();
       }

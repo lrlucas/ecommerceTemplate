@@ -27,7 +27,7 @@ export class ShoppingCartComponent implements OnInit, AfterViewChecked {
       return actions.payment.create({
         payment: {
           transactions: [
-            { amount: { total: this.totalAmount, currency: 'USD' } }
+            { amount: { total: this._carritoService.total_carrito, currency: 'USD' } }
           ]
         }
       });
