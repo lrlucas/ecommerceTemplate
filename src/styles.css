@@ -7,3 +7,12 @@
 .badge{
   cursor: pointer;
 }
+.iconCarrito{
+  font-size: 20px;
+}
+.textCarrito{
+  font-size: 16px;
+}
+.numeroCarrito{
+  font-size: 15px;
+}

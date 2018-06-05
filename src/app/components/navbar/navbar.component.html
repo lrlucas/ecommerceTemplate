@@ -21,10 +21,10 @@
       <ul class="navbar-nav mr-auto">
         <li class="nav-item" [routerLinkActive]="['active']">
           <a class="nav-link waves-effect" [routerLink]="['/']">Home
-            <!-- <span class="sr-only">(current)</span> -->
+             <!--<span class="sr-only">(current)</span>-->
           </a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" [routerLinkActive]="['active']">
           <a class="nav-link waves-effect" href="#">About</a>
         </li>
         <li class="nav-item" [routerLinkActive]="['active']">
@@ -40,9 +40,9 @@
       <ul class="navbar-nav nav-flex-icons">
         <li class="nav-item">
           <a class="nav-link waves-effect" [routerLink]="['/cart']">
-            <span class="badge red z-depth-1 mr-1" *ngIf="_carritoService.items.length > 0"> {{_carritoService.items.length}} </span>
-            <i class="fa fa-shopping-cart"></i>
-            <span class="clearfix d-none d-sm-inline-block"> Cart </span>
+            <span class="badge red z-depth-1 mr-1 numeroCarrito" *ngIf="_carritoService.items.length > 0"> {{_carritoService.items.length}} </span>
+            <i class="fa fa-shopping-cart iconCarrito"></i>
+            <span class="clearfix d-none d-sm-inline-block textCarrito"> Cart </span>
           </a>
         </li>
         <!-- <li class="nav-item">
