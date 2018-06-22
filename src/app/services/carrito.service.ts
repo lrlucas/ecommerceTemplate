@@ -32,8 +32,7 @@ export class CarritoService {
     this.toastr.success('Producto añadido al carrito', 'Se agrego correctamente', {
       timeOut: 2000
     });
-    console.log('CARRITO');
-    console.log(this.items);
+
   }
 
 

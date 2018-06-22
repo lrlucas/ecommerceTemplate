@@ -16,3 +16,11 @@
 .numeroCarrito{
   font-size: 15px;
 }
+/*.md-form input[type=text]:focus:not([readonly]){*/
+  /*!*-webkit-box-shadow: red;*!*/
+  /*box-shadow: red;*/
+  /*border-bottom: red;*/
+/*}*/
+.alturaLoginParaFooter{
+  height: 426px;
+}

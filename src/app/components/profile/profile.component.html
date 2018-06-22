@@ -16,11 +16,13 @@
           <form>
             <p class="h4 text-center py-4">My Profile</p>
 
-            <!-- Material input text -->
+            <!-- Material input Firstname -->
             <div class="md-form">
               <i class="fa fa-user prefix grey-text"></i>
-              <input type="text" id="materialFormCardNameEx" class="form-control">
-              <label for="materialFormCardNameEx" class="font-weight-light">First Name</label>
+              <!--<input type="text" id="materialFormCardNameEx" class="form-control">-->
+              <!--<label for="materialFormCardNameEx" class="font-weight-light">First Name</label>-->
+              <label for="defaultFormLoginEmailEx" class="grey-text">Your email</label>
+              <input type="email" id="defaultFormLoginEmailEx" class="form-control">
             </div>
 
             <!-- Material input email -->
@@ -30,14 +32,14 @@
               <label for="materialFormCardEmailEx" class="font-weight-light">Email</label>
             </div>
 
-            <!-- Material input password -->
+            <!-- Material input Country -->
             <div class="md-form">
               <i class="fa fa-lock prefix grey-text"></i>
               <input type="text" id="materialFormCardPasswordEx" class="form-control">
               <label for="materialFormCardPasswordEx" class="font-weight-light">Country</label>
             </div>
 
-            <!-- Material input password -->
+            <!-- Material input City -->
             <div class="md-form">
               <i class="fa fa-lock prefix grey-text"></i>
               <input type="text" id="materialFormCardPasswordEx2" class="form-control">
@@ -46,6 +48,7 @@
 
           </form>
         </div>
+        <button type="button" class="btn btn-primary" (click)="logout()">Logout</button>
       </div>
 
 

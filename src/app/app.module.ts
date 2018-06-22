@@ -14,9 +14,12 @@ import { CarritoService } from './services/carrito.service';
 import { UserRegisterComponent } from './components/user-register/user-register.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
+import { UserService } from './services/user.service';
+import { LoginComponent } from './components/login/login.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 
@@ -29,13 +32,16 @@ import { ToastrModule } from 'ngx-toastr';
     ProductDetailsComponent,
     UserRegisterComponent,
     ProfileComponent,
-    ShoppingCartComponent
+    ShoppingCartComponent,
+    LoginComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     APP_ROUTES,
     FormsModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot({
       positionClass: 'toast-top-center',
@@ -43,7 +49,8 @@ import { ToastrModule } from 'ngx-toastr';
   ],
   providers: [
     ProductService,
-    CarritoService
+    CarritoService,
+    UserService
   ],
   bootstrap: [AppComponent]
 })

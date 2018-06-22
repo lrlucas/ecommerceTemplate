@@ -5,18 +5,23 @@ import { ProductDetailsComponent } from './components/product-details/product-de
 import { UserRegisterComponent } from './components/user-register/user-register.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
+import {LoginComponent} from './components/login/login.component';
 
 
 
 const appRoutes: Routes = [
 
-  { path: '', component: HomeProductComponent },
+  { path: 'home', component: HomeProductComponent },
   { path: 'product/:id', component: ProductDetailsComponent },
   { path: 'register', component: UserRegisterComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'cart', component: ShoppingCartComponent },
-  { path: '**', redirectTo: '', pathMatch: 'full' },
+  { path: 'login', component: LoginComponent },
+  { path: '**', pathMatch: 'full', redirectTo: 'home' },
 
 ];
+
+// Ruta home no existe por eso la clase active no se coloca sobre
+// el home de la app
 
 export const APP_ROUTES = RouterModule.forRoot(appRoutes);
