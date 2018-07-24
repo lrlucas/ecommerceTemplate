@@ -17,19 +17,29 @@ export class HomeProductComponent implements OnInit {
 
   ngOnInit() {
 
+    this.productAll();
+
+  }
+
+  productAll() {
     this._productService.productAll()
       .subscribe((resp: any) => {
-        console.log(resp); // quitar
         this.products = resp.results;
-        console.log(this.products);
       });
 
   }
 
 
   detallesProducto(id: any) {
-    console.log(id);
     this.router.navigate(['/product', id]);
+  }
+
+
+  buscar_producto(termino: string) {
+    this._productService.buscar_producto(termino)
+      .subscribe(producto => {
+        this.products = producto;
+      });
   }
 
 }

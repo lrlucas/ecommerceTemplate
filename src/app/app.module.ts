@@ -20,6 +20,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { UserService } from './services/user.service';
 import { LoginComponent } from './components/login/login.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { NavbarCategoriaComponent } from './components/navbar-categoria/navbar-categoria.component';
 
 
 
@@ -34,7 +35,8 @@ import { FooterComponent } from './components/footer/footer.component';
     ProfileComponent,
     ShoppingCartComponent,
     LoginComponent,
-    FooterComponent
+    FooterComponent,
+    NavbarCategoriaComponent
   ],
   imports: [
     BrowserModule,

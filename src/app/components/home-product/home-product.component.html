@@ -7,6 +7,8 @@
 <main>
   <div class="container animated fadeIn">
 
+    <!--<app-navbar-categoria></app-navbar-categoria>-->
+
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark mdb-color elegant-color mt-3 mb-5">
 
@@ -26,7 +28,7 @@
         <!-- Links -->
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Todas
+            <a class="nav-link" (click)="productAll()">Todas
               <!--<span class="sr-only">(current)</span>-->
             </a>
           </li>
@@ -43,11 +45,11 @@
         </ul>
         <!-- Links -->
 
-        <form class="form-inline">
+        <div class="form-inline">
           <div class="md-form mt-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Search">
+            <input #input class="form-control mr-sm-2" (keyup.enter)="buscar_producto(input.value)" type="text" placeholder="Buscar y enter" aria-label="Buscar y enter">
           </div>
-        </form>
+        </div>
       </div>
       <!-- Collapsible content -->
 

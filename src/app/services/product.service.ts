@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { URL_SERVICIOS } from '../config/config';
+import 'rxjs/add/operator/map';
 
 @Injectable()
 export class ProductService {
@@ -11,7 +12,6 @@ export class ProductService {
 
    productAll() {
      let url = URL_SERVICIOS + '/product/all/';
-     console.log(url);
      return this.http.get(url);
 
    }
@@ -19,6 +19,14 @@ export class ProductService {
    getProductById(id: string) {
     let url = URL_SERVICIOS + `/product/${id}/`;
     return this.http.get(url);
+   }
+
+   buscar_producto(termino: string) {
+    let url = `${ URL_SERVICIOS }/product/search/?q=${ termino }`;
+    return this.http.get(url)
+      .map( (data: any) => {
+        return data.results;
+      });
    }
 
 
