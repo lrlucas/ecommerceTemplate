@@ -24,4 +24,4 @@ const appRoutes: Routes = [
 // Ruta home no existe por eso la clase active no se coloca sobre
 // el home de la app
 
-export const APP_ROUTES = RouterModule.forRoot(appRoutes, {useHash: true});
+export const APP_ROUTES = RouterModule.forRoot(appRoutes);
